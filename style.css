@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+
+  #game-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  #question {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  #options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  .option {
+    flex: 0 0 calc(33.33% - 10px);
+    max-width: 100px;
+    height: 80px;
+    margin: 0;
+    padding: 5px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .option:hover {
+    background-color: #ddd;
+  }
+
+  #score {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #timer {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  #road-container {
+    width: 400px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  #road {
+    width: 100%;
+    height: 4px;
+    background-color: #777;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+  }
+
+  #car {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    background-image: url("car.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #start-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #start-button:hover {
+    background-color: #45a049;
+  }
